@@ -1,4 +1,4 @@
-embedchain==0.0.49
+embedchain
 openai
 streamlit
 time
