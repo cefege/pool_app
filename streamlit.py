@@ -6,6 +6,12 @@ from string import Template
 from embedchain import App
 from embedchain.config import LlmConfig
 
+__import__("pysqlite3")
+import sys
+
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
+
 # Constants
 OPENAI_API_KEY = st.secrets["API"]["OPEN_AI_API_KEY"]
 TEMPLATE_STRING = """

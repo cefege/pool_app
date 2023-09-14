@@ -1,3 +1,4 @@
 embedchain
 openai
 streamlit
+pysqlite3-binary 
